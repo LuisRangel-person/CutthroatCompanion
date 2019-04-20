@@ -13,6 +13,7 @@
 		A76818BA221E47BC008D1755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76818B9221E47BC008D1755 /* Assets.xcassets */; };
 		A76818BD221E47BC008D1755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76818BB221E47BC008D1755 /* LaunchScreen.storyboard */; };
 		A76818C8221E47BC008D1755 /* CutthroatCompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76818C7221E47BC008D1755 /* CutthroatCompanionTests.swift */; };
+		A76818D3221E5C5E008D1755 /* PlayerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76818D2221E5C5E008D1755 /* PlayerTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A76818C3221E47BC008D1755 /* CutthroatCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CutthroatCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76818C7221E47BC008D1755 /* CutthroatCompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutthroatCompanionTests.swift; sourceTree = "<group>"; };
 		A76818C9221E47BC008D1755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76818D2221E5C5E008D1755 /* PlayerTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 			children = (
 				A76818B2221E47BB008D1755 /* AppDelegate.swift */,
 				A76818B4221E47BB008D1755 /* ViewController.swift */,
-				A76818B6221E47BB008D1755 /* Main.storyboard */,
+				A76818D2221E5C5E008D1755 /* PlayerTable.swift */,
 				A76818B9221E47BC008D1755 /* Assets.xcassets */,
+				A76818B6221E47BB008D1755 /* Main.storyboard */,
 				A76818BB221E47BC008D1755 /* LaunchScreen.storyboard */,
 				A76818BE221E47BC008D1755 /* Info.plist */,
 			);
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76818D3221E5C5E008D1755 /* PlayerTable.swift in Sources */,
 				A76818B5221E47BB008D1755 /* ViewController.swift in Sources */,
 				A76818B3221E47BB008D1755 /* AppDelegate.swift in Sources */,
 			);
@@ -363,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ME593J2BGK;
 				INFOPLIST_FILE = CutthroatCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ME593J2BGK;
 				INFOPLIST_FILE = CutthroatCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
