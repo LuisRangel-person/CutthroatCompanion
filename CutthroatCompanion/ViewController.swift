@@ -23,6 +23,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var player4Table: PlayerTable!
     @IBOutlet weak var P5_Name_Field: UITextField!
     @IBOutlet weak var player5Table: PlayerTable!
+    @IBOutlet weak var v_BallController: UIView!
     
     
     //Keeping Track of Player Selections
@@ -71,6 +72,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController!.navigationBar.isHidden = true;
         P1_Name_Field.delegate = self
         P2_Name_Field.delegate = self
         P3_Name_Field.delegate = self
@@ -128,6 +130,8 @@ class ViewController: UIViewController , UITextFieldDelegate{
         let ball14Tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.ball14Toggled))
         ball14_toggle.addGestureRecognizer(ball14Tap)
         let ball15Tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.ball15Toggled))
+        
+        v_BallController.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ball15_toggle.addGestureRecognizer(ball15Tap)
         resetTable()
     }

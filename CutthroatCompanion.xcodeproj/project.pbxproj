@@ -14,6 +14,10 @@
 		A76818BD221E47BC008D1755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76818BB221E47BC008D1755 /* LaunchScreen.storyboard */; };
 		A76818C8221E47BC008D1755 /* CutthroatCompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76818C7221E47BC008D1755 /* CutthroatCompanionTests.swift */; };
 		A76818D3221E5C5E008D1755 /* PlayerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76818D2221E5C5E008D1755 /* PlayerTable.swift */; };
+		A7775AD822923C9D00D1D64A /* AboutMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7775AD722923C9D00D1D64A /* AboutMenuViewController.swift */; };
+		A7775AD922923C9D00D1D64A /* AboutMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7775AD722923C9D00D1D64A /* AboutMenuViewController.swift */; };
+		A7775ADB2292473400D1D64A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7775ADA2292473400D1D64A /* AboutViewController.swift */; };
+		A7775ADC2292473400D1D64A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7775ADA2292473400D1D64A /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		A76818C7221E47BC008D1755 /* CutthroatCompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutthroatCompanionTests.swift; sourceTree = "<group>"; };
 		A76818C9221E47BC008D1755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76818D2221E5C5E008D1755 /* PlayerTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTable.swift; sourceTree = "<group>"; };
+		A7775AD722923C9D00D1D64A /* AboutMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMenuViewController.swift; sourceTree = "<group>"; };
+		A7775ADA2292473400D1D64A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +85,13 @@
 		A76818B1221E47BB008D1755 /* CutthroatCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				A7775ADA2292473400D1D64A /* AboutViewController.swift */,
 				A76818B2221E47BB008D1755 /* AppDelegate.swift */,
 				A76818B4221E47BB008D1755 /* ViewController.swift */,
 				A76818D2221E5C5E008D1755 /* PlayerTable.swift */,
 				A76818B9221E47BC008D1755 /* Assets.xcassets */,
 				A76818B6221E47BB008D1755 /* Main.storyboard */,
+				A7775AD722923C9D00D1D64A /* AboutMenuViewController.swift */,
 				A76818BB221E47BC008D1755 /* LaunchScreen.storyboard */,
 				A76818BE221E47BC008D1755 /* Info.plist */,
 			);
@@ -149,9 +157,11 @@
 				TargetAttributes = {
 					A76818AE221E47BB008D1755 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					A76818C2221E47BC008D1755 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = A76818AE221E47BB008D1755;
 					};
 				};
@@ -203,6 +213,8 @@
 				A76818D3221E5C5E008D1755 /* PlayerTable.swift in Sources */,
 				A76818B5221E47BB008D1755 /* ViewController.swift in Sources */,
 				A76818B3221E47BB008D1755 /* AppDelegate.swift in Sources */,
+				A7775ADB2292473400D1D64A /* AboutViewController.swift in Sources */,
+				A7775AD822923C9D00D1D64A /* AboutMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7775ADC2292473400D1D64A /* AboutViewController.swift in Sources */,
 				A76818C8221E47BC008D1755 /* CutthroatCompanionTests.swift in Sources */,
+				A7775AD922923C9D00D1D64A /* AboutMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -393,7 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -413,7 +427,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CutthroatCompanion.app/CutthroatCompanion";
 			};
@@ -434,7 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Kiwi-Compani.CutthroatCompanionTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CutthroatCompanion.app/CutthroatCompanion";
 			};
